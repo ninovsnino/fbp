@@ -8,6 +8,10 @@
 
 {% block title %}ninovsnino{% endblock %}
 
+{% block body_attribs %}
+id="page-top"
+{% endblock %}
+
 {% block navbar %}
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
    <div class="container">
@@ -41,11 +45,8 @@
 </div>
 {% endblock %}
 
-
 {% block content %}
-<div class="container">
    {% block page_content %}{% endblock %}
-</div>
 {% endblock %}
 
 
