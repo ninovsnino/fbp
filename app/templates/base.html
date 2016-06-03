@@ -4,9 +4,10 @@
 {{super()}}
 <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}">
 <link rel="stylesheet" href="{{url_for('static', filename='css/scrolling-nav.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='css/fbp.css')}}">
 {% endblock %}
 
-{% block title %}ninovsnino{% endblock %}
+{% block title %}Title{% endblock %}
 
 {% block body_attribs %}
 id="page-top"
@@ -22,20 +23,20 @@ id="page-top"
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
          </button>
-         <a class="navbar-brand page-scroll" href="#page-top">ninovsnino</a>
+         <a class="navbar-brand page-scroll" href="#page-top">Title</a>
       </div>
       <!-- /.navbar-header page-scroll -->
 
       <div class="navbar-collapse collapse">
          <ul class="nav navbar-nav">
             <li class>
-               <a class="page-scroll" href="#services">Services</a>
+               <a class="page-scroll" href="#section1">Section1</a>
             </li>
             <li class>
-               <a class="page-scroll" href="#about">About</a>
+               <a class="page-scroll" href="#section2">Section2</a>
             </li>
             <li class>
-               <a class="page-scroll" href="#contact">Contacts</a>
+               <a class="page-scroll" href="#section3">Section3</a>
             </li>
          </ul>
       </div>
@@ -46,7 +47,9 @@ id="page-top"
 {% endblock %}
 
 {% block content %}
+<div class="container-fluid">
    {% block page_content %}{% endblock %}
+</div>
 {% endblock %}
 
 

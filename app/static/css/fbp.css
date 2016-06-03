@@ -1,0 +1,14 @@
+/* fbp css
+ * Code licensed under MIT
+ */
+
+.fbp-section {
+   height: 100%;
+   padding-top: 150px;
+   padding-bottom: 50px;
+   text-align: center;
+}
+
+.bg-gray {
+   background: #eee;
+}
